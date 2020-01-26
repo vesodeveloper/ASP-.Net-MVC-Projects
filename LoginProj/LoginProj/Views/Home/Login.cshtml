@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+         <div>
+               Hello, @(Session["loggedUser"]==null ? "Annonymous" : Session["loggedUser"])
+            </div>
+            <div id="menu1">
+            <a href="/Home/Index">Home</a>
+            <a href="/Home/InnerPage">Inner Page</a>
+            <a href="/Home/Login">Login</a>
+        </div></br>
+        <h1>Login Form</h1>
+        <form method="post">
+    <label for="user">Username:</label>
+            <input type="text" name="username" id="user"></br><div>
+            @ViewData["UsernameError"]</div>
+             <label for="pass">Password:</label>
+            <input type="password" name="password" id="pass"></br>
+            <div>
+            @ViewData["PasswordError"]</div>
+            <input type="submit" value="Submit">
+        </form>
+             <div>
+                @ViewData["LoginError"]
+            </div>
+</body>
+</html>
+

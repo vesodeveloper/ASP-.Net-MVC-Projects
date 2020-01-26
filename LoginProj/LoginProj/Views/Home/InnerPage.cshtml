@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>InnerPage</title>
+</head>
+<body>
+        <div>
+            <div>
+               Hello, @(Session["loggedUser"]==null ? "Annonymous" : Session["loggedUser"])
+            </div>
+            <div id="menu1"></div>
+            <a href="/Home/Index">Home</a>
+            <a href="/Home/InnerPage">Inner Page</a>
+            <a href="/Home/Login">Login</a>
+        </div></br>
+        <h1>Inner Page</h1>
+        <div>
+            @ViewData["Inside"]
+        </div>
+</body>
+</html>
+

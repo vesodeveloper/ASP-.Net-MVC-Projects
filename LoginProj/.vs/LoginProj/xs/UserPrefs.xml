@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{10C6601C-103A-481D-86EE-335F4A05284B}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LoginProj/Controllers/HomeController.cs">
+    <Files>
+      <File FileName="LoginProj/Controllers/HomeController.cs" Line="69" Column="8" />
+      <File FileName="LoginProj/Views/Home/Index.cshtml" Line="18" Column="44" />
+      <File FileName="LoginProj/Views/Home/Login.cshtml" Line="17" Column="44" />
+      <File FileName="LoginProj/Views/Home/InnerPage.cshtml" Line="18" Column="44" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.LoginProj PreferredExecutionTarget="firefox" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.LoginProj.Tests FirstBuild="True" />
+</Properties>
