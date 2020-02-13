@@ -1,0 +1,33 @@
+﻿@model SimpTest.ViewModel.LogUser
+@{
+
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login</h2>
+
+<form method="post" action="/Home/Login">
+<div>
+@Html.LabelFor(m=>m.Username)
+</div> </br> 
+<div>
+@Html.TextBoxFor(m=>m.Username)
+@Html.ValidationMessageFor(m=>m.Username)        
+    </div>  </br>    
+    <div>
+@Html.LabelFor(m=>m.Password)
+</div> </br> 
+<div>
+@Html.PasswordFor(m=>m.Password)
+@Html.ValidationMessageFor(m=>m.Password)        
+    </div>  </br> 
+    <div>
+@Html.LabelFor(m=>m.Email)
+</div> </br> 
+<div>
+@Html.TextBoxFor(m=>m.Email)
+@Html.ValidationMessageFor(m=>m.Email)        
+    </div>  </br>  
+    <input type="submit" value="Log In">
+    </form>

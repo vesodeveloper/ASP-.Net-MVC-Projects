@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+        <div>
+    Hello,@(Session["loggedUser"]==null ? "Annonymous" : Session["loggedUser"])
+</div>
+        <div>
+            <a href="/Home/Index">Home</a>
+            <a href="/Home/InnerPage">Inner Page</a>
+            <a href="/Home/Users">Users</a>
+            <a href="/Home/Login">Login</a>
+            <a href="/Home/Register">Register</a>
+        </div>
+	@RenderBody()
+</body>
+</html>
